@@ -1,9 +1,4 @@
-package com.hamburgcodingschool.design.patterns.e1;
-
-import com.hamburgcodingschool.design.patterns.e1.composite.Task;
-import com.hamburgcodingschool.design.patterns.e1.composite.TaskList;
-import com.hamburgcodingschool.design.patterns.e1.composite.ToDo;
-
+package com.hamburgcodingschool.design.patterns.e1.composite;
 
 public class Main {
 
@@ -15,7 +10,7 @@ public class Main {
         prepareComposite.addDoable(exampleCode);
         prepareComposite.addDoable(createSlide);
 
-        TaskList taskList = new TaskList();
+        TaskList taskList = new TaskList("Course Preparation");
         taskList.addDoable(prepareComposite);
         taskList.printTaskList();
     }
