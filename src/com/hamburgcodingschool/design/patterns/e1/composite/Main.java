@@ -12,6 +12,6 @@ public class Main {
 
         TaskList taskList = new TaskList("Course Preparation");
         taskList.addDoable(prepareComposite);
-        taskList.printTaskList();
+        taskList.printList();
     }
 }

@@ -1,4 +1,7 @@
-package com.hamburgcodingschool.design.patterns.e1.composite;
+package com.hamburgcodingschool.design.patterns.e1.flyweight;
+
+import com.hamburgcodingschool.design.patterns.e1.composite.Doable;
+import com.hamburgcodingschool.design.patterns.e1.composite.DoableList;
 
 import java.util.ArrayList;
 import java.util.List;

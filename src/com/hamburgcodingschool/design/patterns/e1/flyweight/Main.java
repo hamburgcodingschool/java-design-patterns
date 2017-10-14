@@ -1,8 +1,6 @@
-package com.hamburgcodingschool.design.patterns.e1.singleton;
+package com.hamburgcodingschool.design.patterns.e1.flyweight;
 
-import com.hamburgcodingschool.design.patterns.e1.composite.Task;
-import com.hamburgcodingschool.design.patterns.e1.composite.TaskList;
-import com.hamburgcodingschool.design.patterns.e1.composite.ToDo;
+import com.hamburgcodingschool.design.patterns.e1.singleton.TaskListPool;
 
 public class Main {
 
@@ -13,11 +11,13 @@ public class Main {
         Task prepareComposite = new Task("Prepare Composite");
         prepareComposite.addDoable(compositeExampleCode);
         prepareComposite.addDoable(createCompositeSlide);
+        prepareComposite.done();
 
         TaskList taskList = new TaskList("Course Preparation");
         taskList.addDoable(prepareComposite);
 
         ToDo singletonExampleCode = new ToDo("Create example code");
+        singletonExampleCode.done();
         ToDo createSingletonSlide = new ToDo("Create slides");
         Task prepareSingleton = new Task("Prepare singleton");
         prepareSingleton.addDoable(singletonExampleCode);
