@@ -1,17 +1,18 @@
 package com.hamburgcodingschool.design.patterns.e1.composite;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TaskList {
-    final private List<Task> tasks;
+    final private List<Doable> doables = new ArrayList<>();
 
-    public TaskList(List<Task> tasks) {
-        this.tasks = tasks;
+    public void addDoable(Doable doable) {
+        doables.add(doable);
     }
 
     public void printTaskList() {
-        for (Task task : tasks) {
-            task.print(0);
+        for (Doable doable : doables) {
+            doable.print(0);
         }
     }
 }

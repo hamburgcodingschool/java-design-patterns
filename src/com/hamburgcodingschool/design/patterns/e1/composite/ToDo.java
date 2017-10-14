@@ -1,8 +1,5 @@
 package com.hamburgcodingschool.design.patterns.e1.composite;
 
-
-import com.sun.tools.javac.util.StringUtils;
-
 public class ToDo implements Doable {
 
     private final String description;

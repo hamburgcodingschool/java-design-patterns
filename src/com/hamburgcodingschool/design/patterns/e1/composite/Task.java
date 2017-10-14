@@ -1,15 +1,19 @@
 package com.hamburgcodingschool.design.patterns.e1.composite;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Task implements Doable {
 
     private final String description;
-    private final List<Doable> doableList;
+    private final List<Doable> doableList = new ArrayList<>();
 
-    public Task(String description, List<Doable> doableList) {
+    public Task(String description) {
         this.description = description;
-        this.doableList = doableList;
+    }
+
+    public void addDoable(Doable doable) {
+        doableList.add(doable);
     }
 
     @Override
