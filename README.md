@@ -81,7 +81,7 @@ instead of creating it over and over again.
 ### The Problem
 
 Objects need to react to some event. Calling each object manually, when you don't know where each instance is, can be 
-a hassle. We want each object to know itself when it needs to be updated.
+a hassle. We want each object to know by itself when it needs to update.
 
 ### The Pattern
 
