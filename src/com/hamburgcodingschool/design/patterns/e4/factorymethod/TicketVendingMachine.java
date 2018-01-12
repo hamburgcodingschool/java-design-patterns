@@ -68,19 +68,19 @@ public class TicketVendingMachine extends VendingMachine {
         boolean isEnough = false;
         switch (selection) {
             case 1:
-                isEnough = isEnough(money, 2.0);
+                isEnough = isEnough(money, ShortTripTicket.PRICE);
                 break;
             case 2:
-                isEnough = isEnough(money, 1.9);
+                isEnough = isEnough(money, BusTicket.PRICE);
                 break;
             case 3:
-                isEnough = isEnough(money, 2.0);
+                isEnough = isEnough(money, FerryTicket.PRICE);
                 break;
             case 4:
-                isEnough = isEnough(money, 6.9);
+                isEnough = isEnough(money, DayPassTicket.PRICE);
                 break;
             case 5:
-                isEnough = isEnough(money, 24.5);
+                isEnough = isEnough(money, WeekPassTicket.PRICE);
                 break;
         }
         if (isEnough) {
@@ -109,19 +109,19 @@ public class TicketVendingMachine extends VendingMachine {
         } else {
             switch (selection) {
                 case 1:
-                    moneyBack = payed - 2.0;
+                    moneyBack = payed - ShortTripTicket.PRICE;
                     break;
                 case 2:
-                    moneyBack = payed - 1.9;
+                    moneyBack = payed - BusTicket.PRICE;
                     break;
                 case 3:
-                    moneyBack = payed - 2.0;
+                    moneyBack = payed - FerryTicket.PRICE;
                     break;
                 case 4:
-                    moneyBack = payed - 6.9;
+                    moneyBack = payed - DayPassTicket.PRICE;
                     break;
                 case 5:
-                    moneyBack = payed - 24.5;
+                    moneyBack = payed - WeekPassTicket.PRICE;
                     break;
                 default:
                     System.err.println("Something went wrong... Please contact technical support.");

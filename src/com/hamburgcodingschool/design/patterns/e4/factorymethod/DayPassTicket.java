@@ -4,6 +4,8 @@ import java.util.Calendar;
 
 public class DayPassTicket implements Ticket {
 
+    public static final double PRICE = 6.9;
+    public static final String DESCRIPTION = "Day pass";
     private final long purchasedAt;
 
     public DayPassTicket() {
@@ -21,6 +23,11 @@ public class DayPassTicket implements Ticket {
 
     @Override
     public double getPrice() {
-        return 6.9;
+        return PRICE;
+    }
+
+    @Override
+    public String getDescription() {
+        return DESCRIPTION;
     }
 }

@@ -5,4 +5,6 @@ public interface Ticket {
     boolean isValid();
 
     double getPrice();
+
+    String getDescription();
 }
