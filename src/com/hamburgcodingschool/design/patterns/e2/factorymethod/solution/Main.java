@@ -1,4 +1,6 @@
-package com.hamburgcodingschool.design.patterns.e4.factorymethod;
+package com.hamburgcodingschool.design.patterns.e2.factorymethod.solution;
+
+import com.hamburgcodingschool.design.patterns.e2.factorymethod.VendingMachine;
 
 public class Main {
 

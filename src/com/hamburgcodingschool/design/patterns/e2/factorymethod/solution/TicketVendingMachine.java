@@ -1,6 +1,6 @@
-package com.hamburgcodingschool.design.patterns.e4.factorymethod.solution;
+package com.hamburgcodingschool.design.patterns.e2.factorymethod.solution;
 
-import com.hamburgcodingschool.design.patterns.e4.factorymethod.*;
+import com.hamburgcodingschool.design.patterns.e2.factorymethod.*;
 
 import java.util.Scanner;
 
